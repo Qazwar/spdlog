@@ -399,7 +399,7 @@ inline void spdlog::logger::log_if(const bool flag, level::level_enum lvl, const
 {
     if (flag)
     {
-        log(lvl, fmt, args);
+        log(lvl, fmt, args...);
     }
 }
 
